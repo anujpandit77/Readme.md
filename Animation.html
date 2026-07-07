@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .box{
+            height:100px;
+            width:100px;
+            margin:10px;
+            background-color:dodgerblue;
+            border:2px solid black;
+            border-radius:10px;
+            position:relative;
+            top:100px;
+            left:100px;
+/*
+            animation-name:visitor;
+            animation-duration:3s;
+            animation-timing-function:ease-in-out;
+            animation-delay: 2s;
+
+            animation-iteration-count:infinite;
+            animation-direction:alternate;
+            */
+
+            animation: visitor 2s ease-in-out 1s infinite alternate-reverse ;
+            
+
+        }
+        @keyframes visitor{
+            from{
+                left:10px;
+            }
+            to{
+                left:1200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">Animate</div>
+</body>
+</html>

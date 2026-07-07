@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skew</title>
+    <style>
+        .box{
+            height:100px;
+            width:100px;
+            margin:10px;
+            background-color:darkviolet;
+            border:2px solid black;
+            border-radius:10px;
+            top:100px;
+            left:100px;
+            position:relative;
+            transition-duration:1s;
+            
+        
+        }
+        .box:hover{
+            background-color:green;
+            transform:skew(-45deg);
+        }
+        #box1:hover{
+            transform:skew(90deg);
+        }
+        #box2:hover{
+            transform:skew(360deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">Skew</div>
+    <div id="box1" class="box">Skew</div>
+    <div id="box2" class="box">Skew</div>
+</body>
+</html>
